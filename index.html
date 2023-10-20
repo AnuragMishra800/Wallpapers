@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Grid Portfolio</title> 
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Source+Sans+Pro:wght@300&display=swap');
+   *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   } 
+   body{
+     font-family: 'Bodoni Moda', serif;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 1.2rem;
+   } 
+   .container{
+     min-height: 100vh;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+     align-items: center;
+     gap: 20px;
+     background: linear-gradient(to right, #041308, #0b3317);
+   }
+   .heading{
+     font-size: 3rem;
+     color: white;
+     text-align: center;
+     }
+   .subheading{
+     color: #ddd;
+     margin: 10px;
+     text-align: center;
+     }
+    .gallery{
+     display: grid;
+     gap: 3px;
+     grid-template-columns: repeat(3,1fr);
+     grid-auto-rows: 120px;
+     }
+     p{
+       margin:500px;
+     }
+   .box{
+     background-size: cover;
+     background-position: top;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #222;
+     background-blend-mode: hard-light;
+     transition: all 1s ease-in-out;
+     cursor: pointer;
+     }
+     .box:hover {
+     background-color: #999;
+     background-position: bottom;
+     box-shadow: 0 0 4px #fff;
+     }
+    .row-2{
+     grid-row: span 2; 
+     }
+    .col-2{
+     grid-column: span 2;
+     }
+ </style> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="left-text"> 
+    <h2 class="heading">Wallpaper</h2> 
+    <p class="subheading"> In nature, nothing is perfect and everything is perfect.</p> 
+    <div class="gallery"> 
+     <div class="box row-2" style="background-image: url(https://i.postimg.cc/Xv8XtDTS/pexels-pixabay-62627.jpg)">
+       Waterfalls 
+     </div> 
+     <div class="box col-2" style="background-image: url(https://i.postimg.cc/gJsSXdQS/pexels-pok-rie-130576.jpg)">
+       Hills 
+     </div> 
+     <div class="box" style="background-image: url(https://i.postimg.cc/fTcKJMdx/pexels-belle-co-847393.jpg)">
+       Ocean 
+     </div> 
+     <div class="box row-2" style="background-image: url(https://i.postimg.cc/xTpdGzLY/pexels-pixabay-36717.jpg)">
+       Sunset 
+     </div> 
+     <div class="box col-2" style="background-image: url(https://i.postimg.cc/vDF3CBVm/pexels-pixabay-417173.jpg)">
+       Mountain 
+     </div> 
+     <div class="box" style="background-image: url(https://i.postimg.cc/ZRfqfBXr/pexels-johannes-plenio-1632790.jpg)">
+       Trees 
+     </div> 
+     <div class="box col-2" style="background-image: url(https://i.postimg.cc/3wQKKBjR/pexels-pixabay-459451.jpg)">
+       Rain 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </body>
+</html>
